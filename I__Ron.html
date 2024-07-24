@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeYBeeBox Services</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            overflow: hidden;
+        }
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+        #hero {
+            background-image: url('C:/Users/Admin/OneDrive/Documents/JB cobe/HTML/Lessa.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: jokerman;
+            height: 100vh;
+            color: rgb(211, 211, 211);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        #hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+        #hero button {
+            background-color: #00b3ff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        section p, .testimonials p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+        .products, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .products div, .testimonials div {
+            margin: 20px;
+            max-width: 300px;
+        }
+        .products img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .testimonials p {
+            font-style: italic;
+            margin: 20px 0;
+        }
+        .testimonial::before {
+            content: "“";
+        }
+        .testimonial::after {
+            content: "”";
+        }
+        .testimonial-author {
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        button[type="submit"] {
+            background-color: #00c8ff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">AboutUs</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="hero">
+            <h1><b>Welcome to the Unparalleled Iron Box Service</b></h1>
+            <p>Embark on a journey of flawless fabrics and impeccable creases. Indulge in the epitome of garment care, where precision meets passion.</p>
+            <p>Discover a symphony of heat, steam, and finesse, orchestrating a flawless performance in every press. Experience the sheer delight of crisp linens, silky shirts, and garments that radiate elegance.</p>
+            <button onclick="window.location.href='services.html'">Learn more</button>   
+        </section>
+    </div>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div>
+                <img src="C:/Users\Admin/OneDrive/Documents/JB cobe/JeYBee IRON/Box.jpg" alt="Box 1">
+                <h3>Box 1</h3>
+                <p>Top-quality ironing with advanced features. Delicacy in our pressing providing an outstanding finish.</p>
+                <button onclick="window.location.href='products.html'">View Details</button>
+            </div>
+            <div>
+                <img src="C:/Users/Admin/OneDrive/Documents/JB cobe/JeYBee IRON/Box 2.jpg" alt="Box 2">
+                <h3>Box 2</h3>
+                <p>Innovative design with unmatched performance. Perfect for all your ironing needs.</p>
+                <button onclick="window.location.href='products.html'">View Details</button>
+            </div>
+            <div>
+                <img src="C:/Users/Admin/OneDrive/Documents/JB cobe/JeYBee IRON/JeYBee Box 3.jpg" alt="Box 3">
+                <h3>Box 3</h3>
+                <p>Releaving irons leaving an elegant look all day long</p>
+                <button onclick="window.location.href='products.html'">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials">
+            <div>
+                <p>"Absolutely fantastic service! My clothes have never looked better."</p>
+                <cite>- William Lesabulu</cite>
+            </div>
+            <div>
+                <p>"My whole laundry looks best since I met JeYBee. The servicing is amazing."</p>
+                <cite>- Jane Muriuki</cite>
+            </div>
+            <div>
+                <p>"Exceptional attention to detail and care. I highly recommend JeYBeeBox Services"</p>
+                <cite>-Cyril Wanjohi</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Subscribe To Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 JeYBeeBox Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
